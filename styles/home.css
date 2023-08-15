@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    box-sizing: border-box;
+    font-size: 100%;
+    
+}
+
+:root {
+    --primary-red : hsl(7, 99%, 70%);
+    --primary-yellow : hsl(51, 100%, 49%);
+    --primary-design-text : hsl(167, 40%, 24%);
+    --primary-blue-photo-text : hsl(198, 62%, 26%);
+    --primary-footer-cyan : hsl(168, 34%, 41%);
+    --neutral-blue : hsl(212, 27%, 19%);
+    --neutral-dark-grayish-blue : hsl(213, 9%, 39%);
+    --neutral-dark-blue : hsl(232, 10%, 55%);
+    --neutral-grayish-blue : hsl(210, 4%, 67%);
+    --neutral-white : hsl(0, 0%, 100%);
+    --font-barlow : 'Barlow', sans-serif;
+    --font-fraunces : 'Fraunces', serif;
+}
+
+.header {
+    position: relative;
+    background-image: url('../images/desktop/image-header.jpg') ;
+    height: 100vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.header > .nav-bar {
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > .nav-bar > .logo {
+    
+}
+
+.header > .nav-bar > .logo > img {
+    height: 4.3vh;
+}
+
+.header > .nav-bar > .navigations {
+   
+}
+
+.header > .nav-bar > .navigations > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: var(--neutral-white)
+}
+
+.header > .nav-bar > .navigations > ul > li {
+    font-family: var(--font-barlow);
+    padding: 1rem 2rem;
+    font-size: 18px;
+}
+
+.header > .nav-bar > .navigations > ul > li.active {
+    font-family: var(--font-fraunces);
+    text-transform: uppercase;
+    color: initial;
+    background-color: white;
+    border-radius: 3rem;
+    font-size: 16px;
+}
+
+.header > .header-text {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-family: var(--font-fraunces);
+    text-transform: uppercase;
+    font-size: 3.3rem;
+    font-weight: 900;
+    color: var(--neutral-white);
+    letter-spacing: 0.7rem;
+}
+
+.header > .arrow-down {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
