@@ -1,0 +1,66 @@
+.standout {
+    display: flex;
+    align-items: center;
+    height: 38rem;
+    max-height: 100%;
+    background-color: rgba(254, 120, 103 ,0.04);
+}
+
+.standout > .image {
+    flex: 1;
+    background-image: url('../images/desktop/image-stand-out.jpg');
+    min-width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.standout > .text > .text-heading {
+    max-width: 35rem;
+}
+
+.standout > .text .underline {
+    background-color: rgba(254, 120, 103 ,0.3);
+}
+
+.standout > .text .underline:hover {
+    background-color: rgba(254, 120, 103 );
+    cursor: pointer;
+}
+
+@media (max-width : 400px)  {
+    .standout {
+        flex-direction: column;
+        height: 50rem;
+    }
+
+    .standout > .text {
+        padding: 2.5rem 1rem 1rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .standout > .text > .text-heading {
+        font-size: 2rem;
+        padding: 1rem 1rem 1.5rem;
+    }
+
+    .standout > .text > .text-info {
+        margin: 0;
+        padding: 0.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .standout  > .image {
+        width: 100%;
+    }
+
+    .standout > .text > .learn-more {
+        margin: 0 auto;
+    }
+}
+
+
+

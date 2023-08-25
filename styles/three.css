@@ -1,0 +1,76 @@
+.three {
+    display: flex;
+    height: 38rem;
+}
+
+.graphic-design,
+.photography {
+    width: 50%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.graphic-design {
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+}
+
+.photography {
+    background-image: url('../images/desktop/image-photography.jpg');
+}
+
+.three .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.three .text > .text-heading {
+    font-size: 1.8rem;
+    color: var(--primary-design-text);
+}
+
+.three .text > .text-info {
+    color: var(--primary-design-text);
+    font-size: 1rem;
+    line-height: 1.7rem;
+    width: 22rem;
+    font-weight: bold;
+    margin: 2rem 0 3rem;
+}
+
+.graphic-design .text-info {
+    opacity: 0.8;
+}
+
+
+@media (max-width : 400px) {
+    .three {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .three > div > .text {
+        padding: 0;
+    }
+
+    .graphic-design,
+    .photography {
+        width: 100%;
+        height: 38rem;
+    }
+
+
+    .graphic-design .text-info {
+        opacity: 1;
+        font-weight: bold;
+    }
+
+
+}

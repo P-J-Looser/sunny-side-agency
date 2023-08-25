@@ -1,0 +1,34 @@
+.pics {
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.pics > .milk {
+    background-image: url('../images/desktop/image-gallery-milkbottles.jpg');
+}
+
+.pics > .orange {
+    background-image: url('../images/desktop/image-gallery-orange.jpg');
+}
+
+.pics > .cone {
+    background-image: url('../images/desktop/image-gallery-cone.jpg');
+}
+
+.pics > .blocks {
+    background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
+}
+
+.pics > div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width : 400px) {
+    .pics {
+        height: 24rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}

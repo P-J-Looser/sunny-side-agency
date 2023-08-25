@@ -1,0 +1,111 @@
+.client-testimonial {
+    height: 50rem;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(254, 120, 103 ,0.04);
+}
+
+.client-testimonial > .heading {
+    font-size: 1.4rem;
+    color: var(--neutral-dark-blue);
+    font-family: var(--font-fraunces);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.clients {
+    display: flex;
+}
+
+.clients > div {
+    margin-inline: 1rem;
+}
+
+.clients .photo > img {
+    height: 4.6rem;
+    border-radius: 50%;
+    margin: 4rem 0;
+}
+
+.clients .matter {
+    font-family: var(--font-barlow);
+    color: var(--neutral-dark-grayish-blue);
+    font-size: 18px;
+    width: 22rem;
+    line-height: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.emily,
+.thomas,
+.jennie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.client-testimonial .name {
+    font-family: var(--font-fraunces);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.client-testimonial .name .role {
+    font-family: var(--font-barlow);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--neutral-dark-blue);
+    margin-top: 0.7rem;
+    opacity: 0.8;
+}
+
+@media (max-width : 400px) {
+    .client-testimonial {
+        height: auto;
+        padding-block: 4rem;
+    }
+
+    .clients {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .client-testimonial > .heading  {
+        font-size: 1rem;
+    }
+
+    .clients .photo > img {
+        height: 4.6rem;
+        border-radius: 50%;
+        margin: 3.5rem 0 2rem;
+    }
+
+    .clients .matter {
+        margin-bottom: 2rem;
+    }
+
+    .emily > .matter {
+        padding-inline: 1.2rem;
+    }
+
+    .thomas > .matter {
+        padding-inline: 0.8rem;
+    }
+
+    .jennie > .matter {
+        padding-inline: 0.8rem;
+    }
+
+    .client-testimonial .name .role  {
+        padding-bottom: 1rem;
+    }
+
+}
+
